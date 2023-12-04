@@ -1,0 +1,46 @@
+.home_container{
+    height: 60vh;
+    position: relative;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../assets/main.svg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    pointer-events: none;
+}
+
+.home_container:hover {
+    background-image: url("../../assets/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.home_button:hover {
+    animation: button-push 0.3s linear 1;
+    background-color: var(--hover-color);
+  }
+  
+.home_button{
+    pointer-events: auto;
+    width:250px;
+    height:45px;
+    display: inline-block;
+    z-index: 2;
+    border: 2px solid;
+    padding: 20px 30px;
+    border-radius: 1.875rem;;
+    text-transform: uppercase;
+    color:antiquewhite;
+    cursor: pointer;
+    transition: border-color 0.5s,background-color 0.5s,color 0.5s;
+
+}
+
+.home_button:hover{
+    background-color: aqua;
+    border-color: transparent;
+    color: blue;
+}
