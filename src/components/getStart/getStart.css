@@ -1,0 +1,63 @@
+.getStart_container{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/background.svg");
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding-top: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+
+}
+
+.getStart_img{
+    position: relative;
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+}
+
+.getStart_descriptions{
+   padding: 0 50px 
+}
+
+
+.getStart_button{
+    outline-style: none;
+    border-style: none;
+    padding: 15px 40px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+    z-index:1;
+}
+
+.getStart_button:before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color:#ebc7b5;
+    z-index:-1;
+    transform:scaleX(0);
+    transform-origin: left;
+    transition: .5s;
+    transition-timing-function: cubic-bezier(.9, 1.6, .4, .7);
+    border-radius: 30px;
+}
+
+.getStart_button:hover:before{
+    transform: scaleX(1);
+}
+
+button {
+    background-color: white;
+}

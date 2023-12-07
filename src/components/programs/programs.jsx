@@ -5,8 +5,12 @@ import img from "../../assets/section2.svg";
 const Programs = () => {
   return (
     <section className="programs_container">
-      <div className="programs_title">Syllabus Of Courses</div>
+      <div className="programs_imgs">
+        <img src={img} alt="" className="pro_img" />
+      </div>
+
       <div className="programs_descriptions">
+        <h1 className="programs_title">Syllabus Of Courses</h1>
         <div className="courses">
           <div className="order">
             <h3>01</h3>
@@ -45,10 +49,6 @@ const Programs = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="programs_imgs">
-        <img src={img} alt="" className="pro_img" />
       </div>
     </section>
   );
