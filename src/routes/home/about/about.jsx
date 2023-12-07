@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "./home.css";
+import "./about.css";
 import Img1 from "../../assets/background.svg";
 import Img2 from "../../assets/main.svg";
 
-const Home = () => {
+const About = () => {
   const [user, setUser] = useState([]);
   useEffect(() => {
     names();
@@ -20,12 +20,12 @@ const Home = () => {
   };
 
   return (
-    <section className="home_container" id="home">
-      <div className="home_title">
-        <h1 className="home_section_title">Welcome</h1>
-        <h2 className="home_subtitle">to Daniel's Coding Wonderland!</h2>
-        <div className="home_button">
-          <a href="#about" className="home_button_title">
+    <section className="about_container" id="about">
+      <div className="about_title">
+        <h1 className="about_section_title">Welcome</h1>
+        <h2 className="about_subtitle">to Daniel's Coding Wonderland!</h2>
+        <div className="about_button">
+          <a href="#about" className="about_button_title">
             Know More About It!
           </a>
           <h1>{user.username}</h1>
@@ -35,4 +35,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default About;

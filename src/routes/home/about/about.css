@@ -1,4 +1,4 @@
-.home_container{
+.about_container{
     height: 60vh;
     position: relative;
     margin-top: 5rem;
@@ -12,18 +12,18 @@
     pointer-events: none;
 }
 
-.home_container:hover {
+.about_container:hover {
     background-image: url("../../assets/background.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
   
-.home_button:hover {
+.about_button:hover {
     animation: button-push 0.3s linear 1;
     background-color: var(--hover-color);
   }
   
-.home_button{
+.about_button{
     pointer-events: auto;
     width:250px;
     height:45px;
@@ -39,7 +39,7 @@
 
 }
 
-.home_button:hover{
+.about_button:hover{
     background-color: aqua;
     border-color: transparent;
     color: blue;
